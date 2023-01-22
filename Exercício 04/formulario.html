@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="../Exercício 04/style.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        fieldset{
+            display: flex;
+            justify-content: center;
+            width: 90vw;
+            padding: 5px;
+        }
+
+        #titulo{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: darkblue;
+            font-weight: bolder;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(224, 177, 255);
+            padding: 10px;
+            width: 100%;
+            margin: 5px;
+        }
+
+        section div {
+            display: flex;
+            margin: 10px;
+            width: 500px;
+        }
+
+        button {
+            font-size: 15px;
+            margin-top: 10px;
+            height: 30px;
+            width: 150px;
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+        }
+
+        button:hover {
+            box-shadow: 1px 1px rgba(252, 0, 210, 0.363);
+        }
+        label {
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    
+    
+        <div id="titulo">Formulário de Cadastro</div>
+
+        <fieldset>
+            <legend>Preencha os Dados</legend>
+            <section>
+               
+                <div>
+                <label for="input-nome", >Nome: </label>
+                <input type="text" id="input-nome">
+                </div>
+
+                <div>
+                    <label for="input-data-nascimento">Data de Nascimento: </label>
+                    <input type="date" id="input-data-nascimento">
+                </div>
+
+                <div>
+                    <label for="input-cpf">CPF: </label>
+                    <input type="text" id="input-cpf">
+                </div>
+
+                <div>
+                    <label for="input-município">Nome: </label>
+                    <select id="input-município">
+                        <option>Selecione</option>
+                        <option value="JLLE">Joinville</option>
+                        <option value="BLMN">Blumenau</option>
+                        <option value="JRGS">Jaraguá do Sul</option>
+                        <option value="FLRP">Florianópolis</option>
+                        <option value="SFDS">São Francisco do Sul</option>
+                        <option value="BLNR">Balneário Camboriú</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </section>
+        </fieldset>
+
+</body>
+</html>
